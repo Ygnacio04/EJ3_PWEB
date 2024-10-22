@@ -1,0 +1,98 @@
+body {
+  margin: 0; 
+  padding: 0; 
+  background: linear-gradient(to bottom right, #e2d6b1, #f9f9f9);
+  height: 100vh; 
+  font-family: Arial, sans-serif; 
+ }
+
+.app {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+  margin-bottom: 20px;
+}
+
+.filter select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.pet-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 15px; 
+}
+
+.pet-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pet-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.pet-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.selected-pet-container {
+  margin-top: 20px; 
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selected-pet-info img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.adoption-form {
+  margin-top: 15px;
+}
+
+.adoption-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.request-confirmation {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
